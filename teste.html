@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Imagem</title>
+</head>
+<body>
+    <h1>Upload de Imagem</h1>
+    <form action="http://localhost:3000/upload" method="POST" enctype="multipart/form-data">
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" name="descricao" placeholder="Descrição da imagem" required>
+        <br><br>
+        <label for="imagem">Escolha uma imagem:</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*" required>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
